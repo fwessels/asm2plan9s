@@ -16,7 +16,7 @@ Example
 $ more example.s
                                  // VPADDQ  XMM0,XMM1,XMM8
 $ asm2plan9s example.s
-$ echo example.s
+$ cat example.s
     LONG $0xd471c1c4; BYTE $0xc0 // VPADDQ  XMM0,XMM1,XMM8
 ```
 
