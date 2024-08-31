@@ -87,7 +87,7 @@ func asSingle(instr, next string, lineno, commentPos int, inDefine bool) (string
 	// as -march=armv9-a+crypto -o first.out -al=first.lis first.s
 	app := "as"
 
-	arg0 := "-march=armv9-a+crypto" // See https://sourceware.org/binutils/docs/as/AArch64-Extensions.html
+	arg0 := "-march=armv9-a+sve+sve2+sve2-bitperm" // See https://sourceware.org/binutils/docs/as/AArch64-Extensions.html
 	arg1 := "-o"
 	arg2 := objFile
 	arg3 := fmt.Sprintf("-al=%s", lisFile)
